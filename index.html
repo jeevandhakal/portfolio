@@ -12,16 +12,14 @@
   <title>Jeevan Dhakal - Portfolio</title>
   <meta name="description"
     content="I'm Jeevan Dhakal. A passionate developer with expertise in Python, Go, and Web Development.">
-  <!-- Add Tailwind CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <!-- Add Font Awesome CDN for icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/output.css">
 </head>
 
 <body class="bg-gray-100">
   <!-- Navbar -->
-  <nav class="fixed w-full top-0 bg-blue-500 text-white px-5 py-3">
+  <nav class="fixed w-full z-10 top-0 bg-blue-500 text-white px-5 py-3">
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center space-x-3">
         <div class="h-12 w-12 rounded-full overflow-hidden border-2 boarder-gray-800">
@@ -50,8 +48,8 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="flex items-center justify-center text-white text-center h-screen">
-    <div class="">
+  <header class="bg-hero-image bg-cover flex items-center justify-center text-white text-center h-screen">
+    <div class="bg-gray-800 h-full w-full bg-opacity-70 py-80">
       <h1 class="text-5xl md:text-6xl font-bold mb-4 md:mx-20">Hey, I'm Jeevan Dhakal</h1>
       <p class="text-xl mt-3 mb-20">A passionate developer with expertise in Python, Go, and Web Development.</p>
       <a class="transition ease-in hover:text-gray-800 font-bold duration-200 text-white px-16 py-3 drop-shadow-sm bg-transparent border-2 rounded-lg text-xl hover:bg-white"
