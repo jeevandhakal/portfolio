@@ -1,18 +1,20 @@
  /* width */
  ::-webkit-scrollbar {
-     width: 10px;
+     width: 8px;
  }
-
- /* Track */
- /* ::-webkit-scrollbar-track {} */
 
  /* Handle */
  ::-webkit-scrollbar-thumb {
-     background: #888;
-     border-radius: 5px;
+     background: rgb(178, 178, 178);
  }
 
  /* Handle on hover */
  ::-webkit-scrollbar-thumb:hover {
-     background: #555;
+     background: rgb(119, 119, 119);
+ }
+
+ header {
+     background-image: url("/images/mount-everest.jpg");
+     background-size: auto;
+     background-position: 0vmax;
  }
