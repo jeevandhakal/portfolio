@@ -4,7 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/assets/favicon-16x16.png">
+  <link rel="manifest" href="images/assets/site.webmanifest">
+  <meta name="theme-color" content="#ffffff">
   <title>Jeevan Dhakal - Portfolio</title>
+  <meta name="description"
+    content="I'm Jeevan Dhakal. A passionate developer with expertise in Python, Go, and Web Development.">
   <!-- Add Tailwind CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <!-- Add Font Awesome CDN for icons -->
@@ -13,7 +20,7 @@
 
 <body class="bg-gray-100">
   <!-- Navbar -->
-  <nav class="fixed w-full z-10 top-0 bg-blue-500 text-white p-5">
+  <nav class="fixed w-full top-0 bg-blue-500 text-white px-5 py-3">
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center space-x-3">
         <div class="h-12 w-12 rounded-full overflow-hidden border-2 boarder-gray-800">
@@ -41,19 +48,19 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="bg-gray-800 flex items-center justify-center text-white text-center px-10 h-screen">
+  <header class="bg-gray-800 flex items-center justify-center text-white text-center px-5 h-screen">
     <div>
-      <h1 class="text-6xl font-bold">Hi, I'm Jeevan Dhakal</h1>
-      <p class="text-xl mt-3 mb-8">A passionate developer with expertise in Python, Go, and Web Development.</p>
-      <a class="transition ease-in duration-200 text-white px-12 py-3 bg-blue-500 rounded-lg text-xl hover:bg-blue-600"
+      <h1 class="text-6xl font-bold mb-4 mx-20">Hey, I'm Jeevan Dhakal</h1>
+      <p class="text-xl mt-3 mb-20">A passionate developer with expertise in Python, Go, and Web Development.</p>
+      <a class="transition ease-in hover:text-gray-800 font-bold duration-200 text-white px-16 py-3 drop-shadow-sm bg-transparent border-2 rounded-lg text-xl hover:bg-white"
         href="#contact">Contact</a>
     </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="py-20 px-5 lg:px-10">
+  <section id="about" class="py-20 px-5">
     <div class="flex justify-center items-center text-center">
-      <div class="mt-10 md:mt-0">
+      <div class="mt-10 md:mt-0 md:w-4/5 w-11/12">
         <h2 class="text-4xl font-bold mb-10 border-b-4 border-blue-500 inline-block pb-2">About Me</h2>
         <p class="mb-2 text-xl leading-8">I am a highly motivated computer science graduate from Tribhuvan University,
           with a
@@ -72,14 +79,14 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="bg-gray-200 py-20 px-5 lg:px-10">
-    <div class="container mx-auto">
+  <section id="projects" class="bg-gray-200 py-20 px-5">
+    <div class="container mx-auto md:w-4/5 w-11/12">
       <div class="text-center mt-10 md:mt-0">
         <h2 class="text-4xl font-bold mb-10 border-b-4 border-blue-500 inline-block pb-2">Projects</h2>
       </div>
 
       <!-- Add your projects here -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 gap-8">
         <div class="bg-white p-6 rounded shadow-md">
           <h3 class="text-lg font-bold mb-2">Blog and Tools sharing (Full-Stack)</h3>
           <p class="text-sm text-gray-600 mb-2">June 2023 - Present</p>
@@ -104,10 +111,10 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20 px-5 lg:px-10">
-    <div class="container mx-auto">
+  <section id="contact" class="py-20 px-5">
+    <div class="container mx-auto md:w-4/5 w-11/12">
       <div class="text-center mt-10 md:mt-0">
-        <h2 class="text-4xl font-bold mb-10 border-b-4 rounded border-blue-500 inline-block pb-2">Contact</h2>
+        <h2 class="text-4xl font-bold mb-10 border-b-4 border-blue-500 inline-block pb-2">Contact</h2>
       </div>
       <p>If you'd like to get in touch with me, feel free to reach out via the form below or connect with me on social
         media.</p>
@@ -135,8 +142,6 @@
           class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-all ease-in-out">Send
           Message</button>
       </form>
-
-
     </div>
   </section>
 
@@ -144,27 +149,29 @@
 
 
   <!-- Footer Section -->
-  <footer class="bg-gray-800 text-white px-5 pt-4 md:px-10">
-    <!-- Social Media Links -->
-    <div class="flex flex-col md:flex-row-reverse md:justify-around">
-      <div>
-        <h4 class="font-bold">Socials</h4>
-        <div class="flex justify-start">
-          <a href="https://www.facebook.com/jeevan.dhakal.121/" target="_blank" title="Facebook"
-            class="text-white pr-2 hover:text-blue-500 mb-2"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.linkedin.com/in/dhakaljeevan/" target="_blank" title="LinkedIn"
-            class="text-white pr-2 hover:text-blue-500 mb-2"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/jeevandhakal" target="_blank" title="GitHub"
-            class="text-white pr-2 hover:text-blue-500"><i class="fab fa-github"></i></a>
+  <footer class="bg-gray-800 text-white px-5 pt-4">
+    <div class="md:w-4/5 w-11/12 mx-auto">
+      <!-- Social Media Links -->
+      <div class="flex justify-center items-center pt-4">
+        <div class="text-center">
+          <h4 class="font-bold text-xl inline-block">Follow Me</h4>
+          <div class="flex justify-center items-center py-3">
+            <a href="https://www.facebook.com/jeevan.dhakal.121/" target="_blank" title="Facebook"
+              class="transition ease-in duration-200 text-white px-4 text-2xl hover:text-blue-500"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/dhakaljeevan/" target="_blank" title="LinkedIn"
+              class="transition ease-in duration-200 text-white px-4 text-2xl hover:text-blue-500"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/jeevandhakal" target="_blank" title="GitHub"
+              class="transition ease-in duration-200 text-white px-4 text-2xl hover:text-blue-500"><i
+                class="fab fa-github"></i></a>
+          </div>
         </div>
       </div>
-      <div class="mb-2">
-        <h4 class="font-bold">Jeevan Dhakal</h4>
-        <p>A passionate developer with expertise in Python, Go, and Web Development.</p>
+      <div class="mx-auto border-t border-gray-500 py-5 text-center">
+        <p>&copy; 2023 Jeevan Dhakal. All rights reserved.</p>
       </div>
-    </div>
-    <div class="mx-auto border-t border-gray-500 py-3 text-center">
-      <p>&copy; 2023 Jeevan Dhakal. All rights reserved.</p>
+
     </div>
   </footer>
 
