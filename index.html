@@ -9,38 +9,16 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <!-- Add Font Awesome CDN for icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <style>
-    /* width */
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-
-    /* Track */
-    /* ::-webkit-scrollbar-track {} */
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background: #888;
-      border-radius: 5px;
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
-  </style>
 </head>
 
 <body class="bg-gray-100">
   <!-- Navbar -->
-  <nav class="sticky top-0 bg-blue-500 text-white p-5">
+  <nav class="fixed w-full z-10 top-0 bg-blue-500 text-white p-5">
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center space-x-3">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-10 h-10">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
-        </svg>
+        <div class="h-12 w-12 rounded-full overflow-hidden border-2 boarder-gray-800">
+          <img class="-mt-1" src="images/jeevan.png" alt="Jeevan Dhakal">
+        </div>
         <a href="#" class="font-bold text-2xl">Jeevan Dhakal</a>
       </div>
       <button id="nav-menu-btn" class="md:hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -63,45 +41,43 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="bg-gray-800 text-white text-center px-5">
-    <div class="container flex flex-col items-center justify-center mx-auto h-screen">
-      <h1 class="text-7xl font-bold">Hi, I'm Jeevan Dhakal</h1>
-      <p class=" mt-4 text-2xl">A passionate developer with expertise in Python, Go, and Web Development.</p>
-      <a class="mt-8 transition ease-in duration-200 text-white px-8 py-3 bg-gray-900 rounded-lg text-xl font-bold hover:text-yellow-400"
+  <header class="bg-gray-800 flex items-center justify-center text-white text-center px-10 h-screen">
+    <div>
+      <h1 class="text-6xl font-bold">Hi, I'm Jeevan Dhakal</h1>
+      <p class="text-xl mt-3 mb-8">A passionate developer with expertise in Python, Go, and Web Development.</p>
+      <a class="transition ease-in duration-200 text-white px-12 py-3 bg-blue-500 rounded-lg text-xl hover:bg-blue-600"
         href="#contact">Contact</a>
     </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="py-10 px-5 lg:px-10">
-    <div class="container mx-auto">
-      <h2 class="text-2xl font-bold mb-4">About Me</h2>
-      <p class="mb-2">I am a computer science graduate with a strong passion for problem-solving and creating innovative
-        solutions.
-        During my academic journey at Tribhuvan University, I developed a deep understanding of computer science
-        principles and gained hands-on experience in various programming languages and technologies. My main areas of
-        interest and expertise include Data Science, Machine Learning, and Artificial Intelligence. I
-        enjoy exploring complex datasets, implementing machine learning models, and uncovering valuable insights to
-        drive data-driven decisions. I am proficient in using Python, Pandas, Matplotlib, and NumPy for data analysis
-        and visualization. In addition to my data science skills, I am also experienced in web development. I have built
-        full-stack web applications using frameworks like Django and GraphQL, showcasing my ability to create
-        interactive and
-        user-friendly interfaces. I am well-versed in front-end technologies such as Bootstrap and Tailwind and have
-        utilized them to
-        design responsive and visually appealing websites.</p>
-      <p>As a developer, I take pride in my problem-solving abilities and attention to detail. I am a quick learner and
-        thrive in collaborative environments, where I can contribute my skills and learn from others. I am passionate
-        about staying up-to-date with the latest advancements in technology and continuously improving my skillset. My
-        goal is to leverage my knowledge and expertise to make a positive impact in the field of technology and
-        contribute to projects that tackle real-world challenges. I am excited about the opportunities ahead and look
-        forward to new experiences that will further enhance my professional growth.</p>
+  <section id="about" class="py-20 px-5 lg:px-10">
+    <div class="flex justify-center items-center text-center">
+      <div class="mt-10 md:mt-0">
+        <h2 class="text-4xl font-bold mb-10 border-b-4 border-blue-500 inline-block pb-2">About Me</h2>
+        <p class="mb-2 text-xl leading-8">I am a highly motivated computer science graduate from Tribhuvan University,
+          with a
+          strong passion
+          for problem-solving and innovation. My expertise lies in Data Science, Machine Learning, and Artificial
+          Intelligence, where I excel in analyzing complex datasets, implementing ML models, and creating data-driven
+          solutions. </p>
+        <p class="mb-2 text-xl leading-8">I have hands-on experience in web development, building interactive
+          full-stack
+          applications using Django, GraphQL, and front-end technologies like Bootstrap and Tailwind. With a keen eye
+          for
+          detail and a commitment to staying up-to-date with the latest technologies, my goal is to contribute to
+          meaningful projects and make a positive impact in the tech industry.</p>
+      </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="bg-gray-200 py-10 px-5 lg:px-10">
+  <section id="projects" class="bg-gray-200 py-20 px-5 lg:px-10">
     <div class="container mx-auto">
-      <h2 class="text-2xl font-bold mb-4">Projects</h2>
+      <div class="text-center mt-10 md:mt-0">
+        <h2 class="text-4xl font-bold mb-10 border-b-4 border-blue-500 inline-block pb-2">Projects</h2>
+      </div>
+
       <!-- Add your projects here -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="bg-white p-6 rounded shadow-md">
@@ -128,9 +104,11 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-10 px-5 lg:px-10">
+  <section id="contact" class="py-20 px-5 lg:px-10">
     <div class="container mx-auto">
-      <h2 class="text-2xl font-bold mb-4">Contact</h2>
+      <div class="text-center mt-10 md:mt-0">
+        <h2 class="text-4xl font-bold mb-10 border-b-4 rounded border-blue-500 inline-block pb-2">Contact</h2>
+      </div>
       <p>If you'd like to get in touch with me, feel free to reach out via the form below or connect with me on social
         media.</p>
 
@@ -158,25 +136,34 @@
           Message</button>
       </form>
 
-      <!-- Social Media Links -->
-      <!-- ... (previous code remains unchanged) ... -->
+
     </div>
   </section>
 
-  <!-- Sticky Sidebar -->
-  <div class="fixed left-0 top-1/4 z-50 px-5 py-3 bg-gray-900 flex flex-col space-y-3">
-    <a href="https://www.facebook.com/jeevan.dhakal.121/" target="_blank" title="Facebook"
-      class="text-white hover:text-blue-500 mb-2"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.linkedin.com/in/dhakaljeevan/" target="_blank" title="LinkedIn"
-      class="text-white hover:text-blue-500 mb-2"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://github.com/jeevandhakal" target="_blank" title="GitHub"
-      class="text-white hover:text-blue-500 mb-2"><i class="fab fa-github"></i></a>
-  </div>
+
 
 
   <!-- Footer Section -->
-  <footer class="bg-gray-800 text-white py-4 text-center">
-    <div class="container mx-auto">
+  <footer class="bg-gray-800 text-white px-5 pt-4 md:px-10">
+    <!-- Social Media Links -->
+    <div class="flex flex-col md:flex-row-reverse md:justify-around">
+      <div>
+        <h4 class="font-bold">Socials</h4>
+        <div class="flex justify-start">
+          <a href="https://www.facebook.com/jeevan.dhakal.121/" target="_blank" title="Facebook"
+            class="text-white pr-2 hover:text-blue-500 mb-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/dhakaljeevan/" target="_blank" title="LinkedIn"
+            class="text-white pr-2 hover:text-blue-500 mb-2"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/jeevandhakal" target="_blank" title="GitHub"
+            class="text-white pr-2 hover:text-blue-500"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="mb-2">
+        <h4 class="font-bold">Jeevan Dhakal</h4>
+        <p>A passionate developer with expertise in Python, Go, and Web Development.</p>
+      </div>
+    </div>
+    <div class="mx-auto border-t border-gray-500 py-3 text-center">
       <p>&copy; 2023 Jeevan Dhakal. All rights reserved.</p>
     </div>
   </footer>

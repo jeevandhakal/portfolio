@@ -4,3 +4,13 @@ const mblMenu = document.getElementById("mbl-menu")
 navBtn.addEventListener("click", () => {
     mblMenu.classList.toggle("hidden")
 });
+
+mblMenu.addEventListener("click", () => {
+    mblMenu.classList.toggle("hidden")
+});
+
+// document.addEventListener("click", () => {
+//     if (!mblMenu.classList.contains("hidden")) {
+//         mblMenu.classList.toggle("hidden")
+//     }
+// })
