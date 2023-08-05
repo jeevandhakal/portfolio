@@ -10,8 +10,8 @@
   <link rel="manifest" href="images/assets/site.webmanifest">
   <meta name="theme-color" content="#ffffff">
   <title>Jeevan Dhakal - Portfolio</title>
-  <meta name="description"
-    content="I'm Jeevan Dhakal. A passionate developer with expertise in Python, Go, and Web Development.">
+  <meta name="description" content="I'm Jeevan Dhakal, a passionate developer with expertise in Python, Go, Web Development, and Data
+    Analysis, creating innovative solutions for the digital world.">
   <!-- Add Font Awesome CDN for icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/output.css">
@@ -19,12 +19,9 @@
 
 <body class="bg-gray-100">
   <!-- Navbar -->
-  <nav class="fixed w-full z-10 top-0 bg-blue-500 uppercase text-white px-5 py-3">
+  <nav class="fixed w-full z-10 top-0 bg-white drop-shadow-sm uppercase text-gray-700 px-5 py-6">
     <div class="container mx-auto flex justify-between items-center">
-      <a href="#" class="flex items-center hover:text-gray-100">
-        <div class="h-12 w-12 rounded-full overflow-hidden border-2 boarder-gray-800">
-          <img class="-mt-1" src="images/jeevan.png" alt="Jeevan Dhakal">
-        </div>
+      <a href="#" class="transition ease-in duration-100 flex items-center hover:text-gray-950">
         <h1 class="ml-4 font-bold text-xl">Jeevan Dhakal</h1>
       </a>
       <button id="nav-menu-btn" class="md:hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -34,9 +31,9 @@
       </button>
       <!-- Menu -->
       <div class="hidden md:block">
-        <a href="#about" class="ml-4 hover:text-gray-100">About</a>
-        <a href="#projects" class="ml-4 hover:text-gray-100">Projects</a>
-        <a href="#contact" class="ml-4 hover:text-gray-100">Contact</a>
+        <a href="#about" class="transition ease-in duration-100 ml-4 hover:text-gray-950">About</a>
+        <a href="#projects" class="transition ease-in duration-100 ml-4 hover:text-gray-950">Projects</a>
+        <a href="#contact" class="transition ease-in duration-100 ml-4 hover:text-gray-950">Contact</a>
       </div>
     </div>
     <!-- Mobile Menu -->
@@ -48,33 +45,54 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="bg-hero-image bg-cover flex items-center justify-center text-white text-center h-screen">
-    <div class="bg-gray-800 h-full w-full bg-opacity-70 py-80">
-      <h1 class="text-5xl md:text-6xl font-bold mb-4 md:mx-20">Hey, I'm Jeevan Dhakal</h1>
-      <p class="text-xl mt-3 mb-20">A passionate developer with expertise in Python, Go, and Web Development.</p>
-      <a class="transition ease-in hover:text-gray-800 font-bold duration-200 text-white px-16 py-3 drop-shadow-sm bg-transparent border-2 rounded-lg text-xl hover:bg-white"
-        target="_blank" href="media/jeevan's resume.pdf">Download Resume</a>
+  <header class="bg-hero-image bg-cover flex items-center justify-center  text-center h-screen">
+    <div class="bg-gray-100 h-screen w-full bg-opacity-40 pt-80">
+      <div class="max-w-5xl mx-auto">
+        <h1 class="text-7xl md:text-6xl font-bold tracking-widest uppercase mb-14">Hey, I'm Jeevan Dhakal</h1>
+        <p class="text-xl mt-3 mb-14 tracking-tight md:mx-24">A passionate developer with expertise in Python, Go, Web
+          Development, and Data Analysis, creating innovative solutions for the digital world.</p>
+        <a class="transition ease-in font-bold duration-100 uppercase tracking-wider text-white hover:drop-shadow-lg px-16 py-4 drop-shadow-sm bg-gray-800 rounded-lg text-xl"
+          target="_blank" href="media/Jeevan's_Resume.pdf">Download Resume</a>
+      </div>
     </div>
   </header>
 
 
   <!-- About Section -->
   <section id="about" class="py-20 px-5">
-    <div class="flex justify-center items-center text-center">
-      <div class=" md:w-4/5 w-11/12">
-        <h2 class="text-4xl font-bold mb-10 border-b-4 border-blue-500 inline-block pb-2">About Me</h2>
-        <p class="mb-2 text-xl leading-8">I am a highly motivated computer science graduate from Tribhuvan University,
-          with a
-          strong passion
-          for problem-solving and innovation. My expertise lies in Data Science, Machine Learning, and Artificial
-          Intelligence, where I excel in analyzing complex datasets, implementing ML models, and creating data-driven
-          solutions. </p>
-        <p class="mb-2 text-xl leading-8">I have hands-on experience in web development, building interactive
-          full-stack
-          applications using Django, GraphQL, and front-end technologies like Bootstrap and Tailwind. With a keen eye
-          for
-          detail and a commitment to staying up-to-date with the latest technologies, my goal is to contribute to
-          meaningful projects and make a positive impact in the tech industry.</p>
+    <div class="mx-auto md:w-9/12">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold mb-10 border-b-4 border-gray-800 float-center tracking-wider inline-block pb-2">
+          About Me
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 max-sm:gap-4 md:grid-cols-2">
+        <img class="transition ease-in duration-100 hover:drop-shadow-xl rounded-xl max-h-[36rem] drop-shadow-md"
+          src="images/jeevan.png" alt="Jeevan Dhakal">
+
+        <div class="">
+          <p class="mb-2 text-xl leading-8">Hello! I'm a backend developer with more than a year of experience,
+            specializing in
+            creating RESTful and GraphQL APIs that form the backbone of modern applications. Proficient in Python and
+            Go,
+            I've dedicated myself to crafting efficient and robust digital solutions that enhance user experiences and
+            drive business growth.</p>
+          <p class="mb-2 text-xl leading-8">Currently, I'm expanding my horizons into the realm of Data Analysis and
+            Data
+            Science. I'm fascinated by the potential of extracting valuable insights from complex datasets and
+            transforming them into actionable knowledge. My journey involves mastering data manipulation,
+            visualization
+            techniques, and statistical analysis. I'm excited about the prospect of leveraging Data Science for
+            impactful
+            decision-making and am eager to explore research opportunities that push the boundaries of technological
+            innovation.</p>
+          <p class="mb-2 text-xl leading-8">I'm passionate about combining my backend development expertise with my
+            newfound interest in Data Analysis and Data Science. This intersection of skills drives me to contribute
+            to
+            groundbreaking projects and collaborate with like-minded professionals who share a vision of harnessing
+            data
+            for a more informed and innovative future.</p>
+        </div>
       </div>
     </div>
   </section>
