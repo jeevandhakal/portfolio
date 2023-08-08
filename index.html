@@ -139,32 +139,31 @@
       <div class="text-center ">
         <h2 class="text-4xl font-bold mb-10 border-b-4 border-blue-500 inline-block pb-2">Contact</h2>
       </div>
-      <p>If you'd like to get in touch with me, feel free to reach out via the form below or connect with me on social
-        media.</p>
+      <p class="mb-2">If you'd like to get in touch with me, feel free to reach out via the form below or connect with
+        me on social media.</p>
+      <p id="show-message" class="hidden my-2 text-green-500 text-red-500"></p>
 
       <!-- Contact Form -->
-      <form action="#" method="POST" class="mt-6">
-        <div class="flex flex-col md:flex-row">
-          <div class="md:w-1/2 mb-4 md:mb-0">
-            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-            <input type="text" id="name" name="name" required
-              class="w-full px-4 py-2 mt-2 rounded-md focus:outline-none" placeholder="Your Name">
-          </div>
-          <div class="md:w-1/2 mb-4 md:ml-6">
-            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-            <input type="email" id="email" name="email" required
-              class="w-full px-4 py-2 mt-2 rounded-md focus:outline-none" placeholder="Your Email">
-          </div>
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2 mb-4 md:mb-0">
+          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="name" name="name" required class="w-full px-4 py-2 mt-2 rounded-md focus:outline-none"
+            placeholder="Your Name">
         </div>
-        <div class="mb-4">
-          <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-          <textarea id="message" name="message" rows="4" required
-            class="w-full px-4 py-2 mt-2 rounded-md focus:outline-none" placeholder="Your Message"></textarea>
+        <div class="md:w-1/2 mb-4 md:ml-6">
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="email" name="email" required
+            class="w-full px-4 py-2 mt-2 rounded-md focus:outline-none" placeholder="Your Email">
         </div>
-        <button type="submit"
-          class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-all ease-in-out">Send
-          Message</button>
-      </form>
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+        <textarea id="message" name="message" rows="4" required
+          class="w-full px-4 py-2 mt-2 rounded-md focus:outline-none" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" onclick="send_email(this)"
+        class="bg-blue-500 text-white py-2 px-4 min-w-[80px] rounded-md hover:bg-blue-600 transition-all ease-in-out">Send
+        Message</button>
     </div>
   </section>
 
