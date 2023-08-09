@@ -31,19 +31,18 @@ async function send_email(btn) {
         });
 
         const result = await response.json();
-
+        btn.innerText = "Send Message";
         if (!response.ok) {
             throw new Error(result['message']);
         }
         showMessage.classList.toggle("text-red-500");
         showMessage.textContent = result['message']; // Use textContent instead of innerHTML
         showMessage.classList.toggle("hidden");
-        btn.innerText = "Sent";
 
         setTimeout(() => {
             showMessage.classList.toggle("hidden");
             showMessage.classList.toggle('text-red-500')
-            btn.innerText = "Send Message";
+
         }, 5000); // Delay of 5 seconds (5000 milliseconds)
     } catch (error) {
         showMessage.classList.toggle('text-green-500');
@@ -52,7 +51,6 @@ async function send_email(btn) {
         setTimeout(() => {
             showMessage.classList.toggle("hidden");
             showMessage.classList.toggle('text-green-500')
-            btn.innerText = "Send Message";
         }, 5000);
     }
     nameInput.value = '';
