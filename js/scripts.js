@@ -3,7 +3,10 @@ const mblMenu = document.getElementById("mbl-menu")
 const nameInput = document.getElementById("name")
 const emailInput = document.getElementById("email")
 const messageInput = document.getElementById("message")
-// const showMessage = document.getElementById("show-message")
+const msgContainer = document.getElementById("msg-container")
+const message = document.getElementsByClassName("message")[0]
+const msg = document.getElementById("msg")
+const loader = document.getElementById("loader")
 
 navBtn.addEventListener("click", () => {
     mblMenu.classList.toggle("hidden")
@@ -14,7 +17,7 @@ mblMenu.addEventListener("click", () => {
 });
 
 async function send_email(btn) {
-    btn.innerText = "Sending...";
+    showSpinner();
     const data = {
         "name": nameInput.value,
         "email": emailInput.value,
@@ -23,38 +26,50 @@ async function send_email(btn) {
     try {
         const response = await fetch("https://jeevandhakal.pythonanywhere.com/tools/send_email/", {
             method: "POST",
-            mode: "cors", // Use "cors" to enable cross-origin requests
+            mode: "cors",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(data),
         });
-
         const result = await response.json();
-        btn.innerText = "Send Message";
+        msg.innerText = result['message'];
         if (!response.ok) {
             throw new Error(result['message']);
         }
-        // showMessage.classList.toggle("text-red-500");
-        // showMessage.textContent = result['message']; // Use textContent instead of innerHTML
-        // showMessage.classList.toggle("hidden");
-
-        setTimeout(() => {
-            // showMessage.classList.toggle("hidden");
-            // showMessage.classList.toggle('text-red-500')
-
-        }, 5000); // Delay of 5 seconds (5000 milliseconds)
+        emailInput.value = '';
+        messageInput.value = '';
+        nameInput.value = '';
+        showAndHideMsg("message-success");
     } catch (error) {
-        // showMessage.classList.toggle('text-green-500');
-        // showMessage.textContent = error; // Use textContent instead of innerHTML
-        // showMessage.classList.toggle("hidden");
-        setTimeout(() => {
-            // showMessage.classList.toggle("hidden");
-            // showMessage.classList.toggle('text-green-500')
-        }, 5000);
+        showAndHideMsg("message-warning");
     }
-    nameInput.value = '';
-    emailInput.value = '';
-    messageInput.value = '';
-}
+    hideSpinner();
+};
 
+
+showSpinner = () => {
+    loader.classList.remove("hidden");
+    loader.classList.add("inline");
+
+    // to stop loading after some time
+    setTimeout(() => {
+        hideSpinner();
+    }, 5000);
+};
+
+hideSpinner = () => {
+    loader.classList.add("hidden");
+    loader.classList.remove("inline");
+};
+
+showAndHideMsg = (cls) => {
+    msgContainer.classList.remove("hidden");
+    message.classList.toggle(cls);
+
+    // Delay of 5 seconds (5000 milliseconds)
+    setTimeout(() => {
+        msgContainer.classList.add("hidden");
+        msgContainer.classList.remove(cls);
+    }, 5000);
+};
