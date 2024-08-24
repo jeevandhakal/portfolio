@@ -2,33 +2,37 @@
 <html lang="en" class="scroll-smooth scroll-p-4">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/assets/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/assets/favicon-16x16.png">
-  <link rel="manifest" href="images/assets/site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/assets/favicon-16x16.png" />
+  <link rel="manifest" href="images/assets/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <meta name="theme-color" content="#ffffff" />
   <title>Jeevan Dhakal - Portfolio</title>
   <meta name="description" content="I'm Jeevan Dhakal, a passionate developer with expertise in Python, Go, Web Development, and Data
-    Analysis, creating innovative solutions for the digital world.">
+    Analysis, creating innovative solutions for the digital world." />
   <!-- Add Font Awesome CDN for icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/output.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/output.css" />
 </head>
 
 <body class="bg-background text-primary-text">
   <!-- Navbar -->
-  <nav class="bg-background fixed w-full z-10 top-0 px-16  border-b-[1px] border-section-separator">
+  <nav class="bg-background fixed w-full z-10 top-0 px-4 md:px-16 border-b-[1px] border-section-separator">
     <div class="container mx-auto flex justify-between items-center">
       <a class="font-bold p-4 transition ease-in duration-100 hover:bg-gray-300" href="#">
-        <i class="fa-solid fa-terminal"></i>  <span class="ml-1 text-accent-color-1">Jeevan Dhakal</span>
+        <i class="fa-solid fa-terminal"></i>
+        <span class="ml-1 text-accent-color-1">Jeevan Dhakal</span>
       </a>
-      <button id="nav-menu-btn" class="md:hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+      <button id="nav-menu-btn" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-8 h-8">
           <path stroke-linecap="round" stroke-linejoin="rounded" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </button>
@@ -40,7 +44,6 @@
         <a href="https://jeevandhakal.pythonanywhere.com" target="_blank"
           class="px-8 py-5 hover:bg-section-separator">Blogs</a>
       </div>
-      
     </div>
     <!-- Mobile Menu -->
     <div id="mbl-menu" class="hidden mt-2 md:hidden">
@@ -52,36 +55,38 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="flex items-center h-screen px-20 w-full">
-    <div class="container mx-auto flex justify-between items-center">
-      <div class="max-w-2xl">
-        <h1 class="text-4xl font-bold tracking-widest uppercase mb-4">Hey, I'm Jeevan Dhakal</h1>
-        <p class="text-xl mt-3  mb-4 tracking-tight ">A passionate developer with expertise in
-          Back-End Development, and Data Science practitioner.</p>
-          <div class="flex items-center mb-8 space-x-5">
-            <a href="https://www.linkedin.com/in/dhakaljeevan/" class=" hover:bg-[#1e1e1e]">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 64 64" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M1.15 21.7h13V61h-13zm46.55-1.3c-5.7 0-9.1 2.1-12.7 6.7v-5.4H22V61h13.1V39.7c0-4.5 2.3-8.9 7.5-8.9s8.3 4.4 8.3 8.8V61H64V38.7c0-15.5-10.5-18.3-16.3-18.3zM7.7 2.6C3.4 2.6 0 5.7 0 9.5s3.4 6.9 7.7 6.9 7.7-3.1 7.7-6.9S12 2.6 7.7 2.6z"
-                  clip-rule="evenodd">
-                </path>
-              </svg>
-            </a>
-            <a href="https://github.com/jeevandhakal" class=" hover:bg-[#1e1e1e]">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </a>
-            <a href="https://www.facebook.com/jeevan.dhakal.121/"
-              class=" hover:bg-[#1e1e1e]">
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd"
-                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </a>
+  <header class="flex items-center h-screen md:px-20 w-full">
+    <div class="container mx-auto flex justify-between flex-wrap items-center">
+      <div class="mx-8 md:mx-0 max-w-2xl">
+        <h1 class="md:text-4xl font-bold tracking-widest uppercase mb-4">
+          Hey, I'm Jeevan Dhakal
+        </h1>
+        <p class="md:text-xl mt-3 mb-4 tracking-tight">
+          A passionate developer with expertise in Back-End Development, and
+          Data Science practitioner.
+        </p>
+        <div class="flex items-center mb-8 space-x-5">
+          <a href="https://www.linkedin.com/in/dhakaljeevan/" class="hover:bg-[#1e1e1e]">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 64 64" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M1.15 21.7h13V61h-13zm46.55-1.3c-5.7 0-9.1 2.1-12.7 6.7v-5.4H22V61h13.1V39.7c0-4.5 2.3-8.9 7.5-8.9s8.3 4.4 8.3 8.8V61H64V38.7c0-15.5-10.5-18.3-16.3-18.3zM7.7 2.6C3.4 2.6 0 5.7 0 9.5s3.4 6.9 7.7 6.9 7.7-3.1 7.7-6.9S12 2.6 7.7 2.6z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a href="https://github.com/jeevandhakal" class="hover:bg-[#1e1e1e]">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/jeevan.dhakal.121/" class="hover:bg-[#1e1e1e]">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
         </div>
         <a class="bg-accent-color-1 font-bold uppercase tracking-wider px-6 py-3 drop-shadow-sm bg-gray-800 rounded-lg text-sm"
           target="_blank" href="media/JeevanDhakal_Resume.pdf">Resume <i class="fa-solid fa-download ml-2"></i></a>
@@ -89,180 +94,195 @@
       <div class="relative w-full max-w-96">
         <!-- Slider Wrapper -->
         <div class="overflow-hidden relative h-64">
-            <!-- Slide 1 - GraphQL -->
-            <div class="absolute inset-0 transition-transform duration-500 transform translate-x-0 flex flex-col items-center justify-center">
-                <img src="./images/GraphQL_Logo.webp" alt="GraphQL Logo" class="h-24 max-w-xs">
-                <h2 class="mt-4 text-xl font-bold">GraphQL</h2>
-            </div>
-            <!-- Slide 2 - FastAPI -->
-            <div class="absolute inset-0 transition-transform duration-500 transform translate-x-full flex flex-col items-center justify-center">
-                <img src="./images/fastapi.webp" alt="FastAPI Logo" class="h-24 max-w-xs">
-                <h2 class="mt-4 text-xl font-bold">FastAPI</h2>
-            </div>
-            <!-- Slide 3 - SQLAlchemy -->
-            <div class="absolute inset-0 transition-transform duration-500 transform translate-x-full flex flex-col items-center justify-center">
-                <img src="./images/SQLAlchemy.webp" alt="SQLAlchemy Logo" class="h-24 max-w-xs">
-                <h2 class="mt-4 text-xl font-bold">SQLAlchemy</h2>
-            </div>
-            <!-- Slide 4 - Postgresql -->
-            <div class="absolute inset-0 transition-transform duration-500 transform translate-x-full flex flex-col items-center justify-center">
-              <img src="./images/Postgresql_elephant.webp" alt="Postgresql Logo" class="h-24 max-w-xs">
-              <h2 class="mt-4 text-xl font-bold">Postgresql</h2>
-            </div>
-            <!-- Slide 4 - Pandas -->
-            <div class="absolute inset-0 transition-transform duration-500 transform translate-x-full flex flex-col items-center justify-center">
-              <img src="./images/pandas_mark.webp" alt="Pandas Logo" class="h-24 max-w-xs">
-              <h2 class="mt-4 text-xl font-bold">Pandas</h2>
-            </div>
+          <!-- Slide 1 - GraphQL -->
+          <div
+            class="absolute inset-0 transition-transform duration-500 transform translate-x-0 flex flex-col items-center justify-center">
+            <img src="./images/GraphQL_Logo.webp" alt="GraphQL Logo" class="h-24 max-w-xs" />
+            <h2 class="mt-4 md:text-xl font-bold">GraphQL</h2>
+          </div>
+          <!-- Slide 2 - FastAPI -->
+          <div
+            class="absolute inset-0 transition-transform duration-500 transform translate-x-full flex flex-col items-center justify-center">
+            <img src="./images/fastapi.webp" alt="FastAPI Logo" class="h-24 max-w-xs" />
+            <h2 class="mt-4 md:text-xl font-bold">FastAPI</h2>
+          </div>
+          <!-- Slide 3 - SQLAlchemy -->
+          <div
+            class="absolute inset-0 transition-transform duration-500 transform translate-x-full flex flex-col items-center justify-center">
+            <img src="./images/SQLAlchemy.webp" alt="SQLAlchemy Logo" class="h-24 max-w-xs" />
+            <h2 class="mt-4 md:text-xl font-bold">SQLAlchemy</h2>
+          </div>
+          <!-- Slide 4 - Postgresql -->
+          <div
+            class="absolute inset-0 transition-transform duration-500 transform translate-x-full flex flex-col items-center justify-center">
+            <img src="./images/Postgresql_elephant.webp" alt="Postgresql Logo" class="h-24 max-w-xs" />
+            <h2 class="mt-4 md:text-xl font-bold">Postgresql</h2>
+          </div>
+          <!-- Slide 4 - Pandas -->
+          <div
+            class="absolute inset-0 transition-transform duration-500 transform translate-x-full flex flex-col items-center justify-center">
+            <img src="./images/pandas_mark.webp" alt="Pandas Logo" class="h-24 max-w-xs" />
+            <h2 class="mt-4 md:text-xl font-bold">Pandas</h2>
+          </div>
         </div>
 
         <!-- Previous Button -->
-        <button id="prev" class="absolute left-12 top-1/2 transform -translate-y-1/2 bg-section-background bg-opacity-50 hover:bg-opacity-75 text-white text-sm py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-section-separator focus:ring-opacity-50">
-            <i class="fas fa-chevron-left"></i>
+        <button id="prev"
+          class="absolute left-12 top-1/2 transform -translate-y-1/2 bg-section-background bg-opacity-50 hover:bg-opacity-75 text-white text-sm py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-section-separator focus:ring-opacity-50">
+          <i class="fas fa-chevron-left"></i>
         </button>
 
         <!-- Next Button -->
-        <button id="next" class="absolute right-12 top-1/2 transform -translate-y-1/2 bg-section-separator bg-opacity-50 hover:bg-opacity-75 text-white text-sm py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-section-separator focus:ring-opacity-50">
-            <i class="fas fa-chevron-right"></i>
+        <button id="next"
+          class="absolute right-12 top-1/2 transform -translate-y-1/2 bg-section-separator bg-opacity-50 hover:bg-opacity-75 text-white text-sm py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-section-separator focus:ring-opacity-50">
+          <i class="fas fa-chevron-right"></i>
         </button>
       </div>
     </div>
   </header>
 
-
-  <!-- About Section -->
+  <!-- Experience Section -->
   <section id="experiences" class="py-20 px-5 bg-section-background">
     <div class="mx-auto md:w-9/12">
       <div class="text-center">
-        <h2 class="text-4xl font-bold mb-10 border-b-4 border-gray-800 float-center tracking-wider inline-block pb-2">
+        <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-10 float-center inline-block pb-2">
           Experiences
         </h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Experience Card 1 -->
         <div class="bg-section-separator text-white p-6 rounded-lg shadow-lg max-w-sm">
-            <div class="flex items-center mb-4">
-                <img src="./images/hridayangam_technology_logo.jpeg" alt="Company Logo" class="h-12 w-12 mr-2 rounded-md">
-                <h3 class="text-xl font-bold">Back-End Developer</h3>
-            </div>
-            <div class="flex items-center mb-2">
-                <i class="fas fa-building text-gray-400 mr-2"></i>
-                <span class="text-sm text-gray-400">Hridayangam Technology Pvt. Ltd.</span>
-            </div>
-            <div class="flex items-center mb-2">
-                <i class="fas fa-map-marker-alt text-gray-400 mr-2"></i>
-                <span class="text-sm text-gray-400">Sanepa, Lalitpur</span>
-            </div>
-            <div class="flex items-center mb-2">
-                <i class="fas fa-briefcase text-gray-400 mr-2"></i>
-                <span class="text-sm text-gray-400">Full Time</span>
-            </div>
-            <div class="flex items-center mb-2">
-                <i class="fas fa-calendar-alt text-gray-400 mr-2"></i>
-                <span class="text-sm text-gray-400">Nov 2023 - Present</span>
-            </div>
-            <p class="text-sm text-gray-300 mb-4">
-              I mentor junior coworkers, coordinate the back-end team, model complex data, and develop a REST API for an ERP project using Python, FastAPI, and Postgres.
-            </p>
+          <div class="flex items-center mb-4">
+            <img src="./images/hridayangam_technology_logo.jpeg" alt="Company Logo" class="h-12 w-12 mr-2 rounded-md" />
+            <h3 class="text-xl font-bold">Back-End Developer</h3>
+          </div>
+          <div class="flex items-center mb-2">
+            <i class="fas fa-building text-gray-400 mr-2"></i>
+            <span class="text-sm text-gray-400">Hridayangam Technology Pvt. Ltd.</span>
+          </div>
+          <div class="flex items-center mb-2">
+            <i class="fas fa-map-marker-alt text-gray-400 mr-2"></i>
+            <span class="text-sm text-gray-400">Sanepa, Lalitpur</span>
+          </div>
+          <div class="flex items-center mb-2">
+            <i class="fas fa-briefcase text-gray-400 mr-2"></i>
+            <span class="text-sm text-gray-400">Full Time</span>
+          </div>
+          <div class="flex items-center mb-2">
+            <i class="fas fa-calendar-alt text-gray-400 mr-2"></i>
+            <span class="text-sm text-gray-400">Nov 2023 - Present</span>
+          </div>
+          <p class="text-sm text-gray-300 mb-4">
+            I mentor junior coworkers, coordinate the back-end team, model
+            complex data, and develop a REST API for an ERP project using
+            Python, FastAPI, and Postgres.
+          </p>
         </div>
 
         <!-- Experience Card 2 -->
         <div class="bg-section-separator text-white p-6 rounded-lg shadow-lg max-w-sm">
           <div class="flex items-center mb-4">
-              <img src="./images/aeon-soft-logo.jpg" alt="Company Logo" class="h-12 w-12 mr-2 rounded-md">
-              <h3 class="text-xl font-bold">Back-End Developer</h3>
+            <img src="./images/aeon-soft-logo.jpg" alt="Company Logo" class="h-12 w-12 mr-2 rounded-md" />
+            <h3 class="text-xl font-bold">Back-End Developer</h3>
           </div>
           <div class="flex items-center mb-2">
-              <i class="fas fa-building text-gray-400 mr-2"></i>
-              <span class="text-sm text-gray-400">Aeon-Soft Solution Pvt. Ltd.</span>
+            <i class="fas fa-building text-gray-400 mr-2"></i>
+            <span class="text-sm text-gray-400">Aeon-Soft Solution Pvt. Ltd.</span>
           </div>
           <div class="flex items-center mb-2">
-              <i class="fas fa-map-marker-alt text-gray-400 mr-2"></i>
-              <span class="text-sm text-gray-400">Putalisadak, Kathmandu</span>
+            <i class="fas fa-map-marker-alt text-gray-400 mr-2"></i>
+            <span class="text-sm text-gray-400">Putalisadak, Kathmandu</span>
           </div>
           <div class="flex items-center mb-2">
-              <i class="fas fa-briefcase text-gray-400 mr-2"></i>
-              <span class="text-sm text-gray-400">Full Time</span>
+            <i class="fas fa-briefcase text-gray-400 mr-2"></i>
+            <span class="text-sm text-gray-400">Full Time</span>
           </div>
           <div class="flex items-center mb-2">
-              <i class="fas fa-calendar-alt text-gray-400 mr-2"></i>
-              <span class="text-sm text-gray-400">Dec 2022 - Nov 2023</span>
+            <i class="fas fa-calendar-alt text-gray-400 mr-2"></i>
+            <span class="text-sm text-gray-400">Dec 2022 - Nov 2023</span>
           </div>
           <p class="text-sm text-gray-300 mb-4">
-            I supervised interns, developed a recommendation system for <i>'Tuteeline'</i>, designed database, created a GraphQL API, and built a chat system.
+            I supervised interns, developed a recommendation system for
+            <i>'Tuteeline'</i>, designed database, created a GraphQL API, and
+            built a chat system.
           </p>
-      </div>
+        </div>
 
         <!-- Add more experience cards as needed -->
-    </div>
+      </div>
     </div>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="bg-gray-200 py-20 px-5">
     <div class="container mx-auto md:w-4/5 w-11/12">
-      <div class="text-center ">
-        <h2 class="text-4xl font-bold mb-10 border-b-4 border-blue-500 inline-block pb-2">Projects</h2>
+      <div class="text-center">
+        <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-10 inline-block pb-2">
+          Projects
+        </h2>
       </div>
 
       <!-- Add your projects here -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
         <!-- Card 1 -->
         <div class="bg-section-background text-white p-6 rounded-lg shadow-lg max-w-sm">
-            <!-- Logo and GitHub Link -->
-            <div class="flex justify-between items-center mb-4">
-                <img src="./images/django-logo.webp" alt="Project Logo" class="h-10">
-                <a href="https://jeevandhakal.pythonanywhere.com" target="_blank" class="text-secondary-text hover:text-primary-text">
-                    <i class="fas fa-link"></i>
-                </a>
-            </div>
-            <!-- Project Title -->
-            <h3 class="text-xl font-bold mb-2">Blog and Tools sharing</h3>
-            <!-- Project Type -->
-            <div class="flex items-center mb-2">
-                <i class="fas fa-layer-group text-secondary-text mr-2"></i>
-                <span class="text-sm text-secondary-text">Full Stack</span>
-            </div>
-            <!-- Date Tags -->
-            <div class="flex justify-between items-center mb-4">
-                <span class="bg-section-separator py-1 px-2 rounded-full text-xs">June 2023</span>
-                <span class="bg-section-separator py-1 px-2 rounded-full text-xs">Now</span>
-            </div>
-            <!-- Project Description -->
-            <p class="text-sm text-gray-300 mb-4">
-              A personal blog platform with a rich-text editor using Django and Bootstrap.
-            </p>
+          <!-- Logo and GitHub Link -->
+          <div class="flex justify-between items-center mb-4">
+            <img src="./images/django-logo.webp" alt="Project Logo" class="h-10" />
+            <a href="https://jeevandhakal.pythonanywhere.com" target="_blank"
+              class="text-secondary-text hover:text-primary-text">
+              <i class="fas fa-link"></i>
+            </a>
+          </div>
+          <!-- Project Title -->
+          <h3 class="text-xl font-bold mb-2">Blog and Tools sharing</h3>
+          <!-- Project Type -->
+          <div class="flex items-center mb-2">
+            <i class="fas fa-layer-group text-secondary-text mr-2"></i>
+            <span class="text-sm text-secondary-text">Full Stack</span>
+          </div>
+          <!-- Date Tags -->
+          <div class="flex justify-between items-center mb-4">
+            <span class="bg-section-separator py-1 px-2 rounded-full text-xs">June 2023</span>
+            <span class="bg-section-separator py-1 px-2 rounded-full text-xs">Now</span>
+          </div>
+          <!-- Project Description -->
+          <p class="text-sm text-gray-300 mb-4">
+            A personal blog platform with a rich-text editor using Django and
+            Bootstrap.
+          </p>
         </div>
         <!-- Card 2 -->
         <div class="bg-section-background text-white p-6 rounded-lg shadow-lg max-w-sm">
           <!-- Logo and GitHub Link -->
           <div class="flex justify-between items-center mb-4">
-              <img src="./images/django-logo.webp" alt="Project Logo" class="h-10">
-              <a href="https://jeevandhakal.pythonanywhere.com" target="_blank" class="text-secondary-text hover:text-primary-text">
-                  <i class="fas fa-link"></i>
-              </a>
+            <img src="./images/django-logo.webp" alt="Project Logo" class="h-10" />
+            <a href="https://jeevandhakal.pythonanywhere.com" target="_blank"
+              class="text-secondary-text hover:text-primary-text">
+              <i class="fas fa-link"></i>
+            </a>
           </div>
           <!-- Project Title -->
           <h3 class="text-xl font-bold mb-2">Price Comparison System</h3>
           <!-- Project Type -->
           <div class="flex items-center mb-2">
-              <i class="fas fa-layer-group text-secondary-text mr-2"></i>
-              <span class="text-sm text-secondary-text">Full Stack</span>
+            <i class="fas fa-layer-group text-secondary-text mr-2"></i>
+            <span class="text-sm text-secondary-text">Full Stack</span>
           </div>
           <!-- Date Tags -->
           <div class="flex justify-between items-center mb-4">
-              <span class="bg-section-separator py-1 px-2 rounded-full text-xs">Nov 2021</span>
-              <span class="bg-section-separator py-1 px-2 rounded-full text-xs">Jan 2022</span>
+            <span class="bg-section-separator py-1 px-2 rounded-full text-xs">Nov 2021</span>
+            <span class="bg-section-separator py-1 px-2 rounded-full text-xs">Jan 2022</span>
           </div>
           <!-- Project Description -->
           <p class="text-sm text-gray-300 mb-4">
-            A web application for live price comparison using web scraping, Django, and Bootstrap.
+            A web application for live price comparison using web scraping,
+            Django, and Bootstrap.
           </p>
-      </div>
+        </div>
 
         <!-- Repeat or add more cards as needed -->
-
-    </div>
+      </div>
     </div>
   </section>
 
@@ -287,7 +307,7 @@
       <div class="mt-8 overflow-hidden">
         <div class="grid grid-cols-1 md:grid-cols-2">
           <div class="p-6 mr-2 bg-grabackbg-background sm:rounded-lg">
-            <h1 class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
               Get in touch
             </h1>
             <p class="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
@@ -334,13 +354,13 @@
             <div class="flex flex-col">
               <label for="name" class="hidden">Full Name</label>
               <input type="name" name="name" id="name" placeholder="Full Name" required
-                class="w-100 mt-2 py-3 px-3 rounded-lg bg-section-separator border border-gray-400 text-primary-text font-semibold focus:border-indigo-500 focus:outline-none dark:text-gray-200">
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-section-separator border border-gray-400 text-primary-text font-semibold focus:border-indigo-500 focus:outline-none dark:text-gray-200" />
             </div>
 
             <div class="flex flex-col mt-2">
               <label for="email" class="hidden">Email</label>
               <input type="email" name="email" id="email" placeholder="Email" required
-                class="w-100 mt-2 py-3 px-3 rounded-lg bg-section-separator border border-gray-400 text-primary-text font-semibold focus:border-indigo-500 focus:outline-none dark:text-gray-200">
+                class="w-100 mt-2 py-3 px-3 rounded-lg bg-section-separator border border-gray-400 text-primary-text font-semibold focus:border-indigo-500 focus:outline-none dark:text-gray-200" />
             </div>
 
             <div class="flex flex-col mt-2">
@@ -368,21 +388,23 @@
     </div>
   </div>
 
-
   <!-- Footer Section -->
   <footer class="px-5 py-6 bg-white sm:p-6 dark:bg-gray-900">
     <div class="md:w-4/5 mt-12 w-11/12 mx-auto md:flex md:justify-between">
       <div class="mb-6 flex flex-col">
-        <h3 class="mb-4 text-xl font-semibold text-gray-900  dark:text-white">
+        <h3 class="mb-4 text-xl font-semibold text-gray-900 dark:text-white">
           JD.
         </h3>
         <p class="text-gray-500">
-          A passionate Developer and <br> Data Science enthusiast from Nepal.
+          A passionate Developer and <br />
+          Data Science enthusiast from Nepal.
         </p>
       </div>
       <div class="grid gap-8 sm:gap-6 sm:grid-cols-2">
         <div>
-          <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Links</h3>
+          <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            Useful Links
+          </h3>
           <ul>
             <li class="mb-3">
               <a href="#about" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">About</a>
@@ -402,10 +424,10 @@
       </div>
     </div>
 
-    <hr class="md:w-4/5 w-11/12 mx-auto my-6 border-section-separator sm:mx-auto lg:my-8">
+    <hr class="md:w-4/5 w-11/12 mx-auto my-6 border-section-separator sm:mx-auto lg:my-8" />
     <div class="md:w-4/5 w-11/12 mx-auto sm:flex sm:items-center sm:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">&copy; <span id="year"></span> Jeevan Dhakal. All rights
-        reserved.
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">&copy; <span id="year"></span> Jeevan
+        Dhakal. All rights reserved.
       </span>
       <div class="flex mt-3 space-x-6 sm:justify-center sm:mt-0">
         <a href="https://www.linkedin.com/in/dhakaljeevan/"
@@ -413,8 +435,7 @@
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 64 64" aria-hidden="true">
             <path fill-rule="evenodd"
               d="M1.15 21.7h13V61h-13zm46.55-1.3c-5.7 0-9.1 2.1-12.7 6.7v-5.4H22V61h13.1V39.7c0-4.5 2.3-8.9 7.5-8.9s8.3 4.4 8.3 8.8V61H64V38.7c0-15.5-10.5-18.3-16.3-18.3zM7.7 2.6C3.4 2.6 0 5.7 0 9.5s3.4 6.9 7.7 6.9 7.7-3.1 7.7-6.9S12 2.6 7.7 2.6z"
-              clip-rule="evenodd">
-            </path>
+              clip-rule="evenodd"></path>
           </svg>
         </a>
         <a href="https://github.com/jeevandhakal" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -443,11 +464,7 @@
     </div>
   </footer>
 
-
-
   <!-- Add your JavaScript for interactivity if needed -->
   <script src="js/scripts.js" type="text/JavaScript"></script>
-
 </body>
-
 </html>
