@@ -7,6 +7,9 @@ const msgContainer = document.getElementById("msg-container")
 const message = document.getElementsByClassName("message")[0]
 const msg = document.getElementById("msg")
 const loader = document.getElementById("loader")
+const messageIcon = document.getElementById("messageIcon")
+const successIconClass = 'fa-circle-check'
+const warningIcon = 'fa-circle-info'
 
 navBtn.addEventListener("click", () => {
     mblMenu.classList.toggle("hidden")
@@ -16,12 +19,26 @@ mblMenu.addEventListener("click", () => {
     mblMenu.classList.toggle("hidden")
 });
 
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Validate form fields
+    if (this.checkValidity()) {
+      // Form is valid, proceed with send_email
+      send_email(this);
+    } else {
+      // Show validation error messages
+      this.reportValidity();
+    }
+  });
+
+
 async function send_email(btn) {
     showSpinner();
     const data = {
         "name": nameInput.value,
         "email": emailInput.value,
-        "message": messageInput.value
+        "message": messageInput.value,
     };
     try {
         const response = await fetch("https://jeevandhakal.pythonanywhere.com/tools/send_email/", {
@@ -33,6 +50,7 @@ async function send_email(btn) {
             body: JSON.stringify(data),
         });
         const result = await response.json();
+        setSuccessIconClass();
         msg.innerText = result['message'];
         if (!response.ok) {
             throw new Error(result['message']);
@@ -42,10 +60,25 @@ async function send_email(btn) {
         nameInput.value = '';
         showAndHideMsg("message-success");
     } catch (error) {
+        setWarningIconClass();
+        if (msg.innerText == '') {
+            msg.innerText = "Something went wrong. Please try again later.";
+        }
         showAndHideMsg("message-warning");
     }
     hideSpinner();
 };
+
+
+setSuccessIconClass = () => {
+    messageIcon.classList.add(successIconClass);
+    messageIcon.classList.remove(warningIcon);
+}
+
+setWarningIconClass = () => {
+    messageIcon.classList.add(warningIcon);
+    messageIcon.classList.remove(successIconClass);
+}
 
 
 showSpinner = () => {
